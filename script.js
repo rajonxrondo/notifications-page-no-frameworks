@@ -2,6 +2,7 @@ const unreadMessages = document.querySelectorAll(".unread");
 const unread = document.getElementById("notifications");
 const markAll = document.getElementById("mark_all");
 
+
 unread.innerText = unreadMessages.length;
 
 unreadMessages.forEach((message) => {
@@ -19,3 +20,4 @@ markAll.addEventListener("click", () => {
     const newUnreadMessages = document.querySelectorAll(".unread");
     unread.innerText = newUnreadMessages.length;
 })
+
